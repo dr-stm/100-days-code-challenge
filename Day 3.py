@@ -16,7 +16,8 @@ In addition, write a program that reads 3 lengths from the user and demonstrates
 ***Method 1***
 """
 
-try:  #using try to prevent the program from crashing
+#using try to prevent the program from crashing
+try:
 
 #calling user to enter three numbers respectively 
   side1 = int(input("Enter a length number: "))
@@ -34,7 +35,8 @@ except:
 
 """***Method 2***"""
 
-try:  #using try to prevent the program from crashing
+#using try to prevent the program from crashing
+try:
 
 #calling user to enter three numbers respectively
 #and filtering out non-positive numbers per entry
