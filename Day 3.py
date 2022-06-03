@@ -20,9 +20,9 @@ In addition, write a program that reads 3 lengths from the user and demonstrates
 try:
 
 #calling user to enter three numbers respectively 
-  side1 = int(input("Enter a length number: "))
-  side2 = int(input("Enter another length number: "))
-  side3 = int(input("and the last length number: "))
+  side1 = float(input("Enter a length number: "))
+  side2 = float(input("Enter another length number: "))
+  side3 = float(input("and the last length number: "))
 
   if side1 <= 0 or side2 <= 0 or side3 <= 0:  #filtering out negative numbers and 0
     print("Please enter a positive number")
@@ -40,15 +40,15 @@ try:
 
 #calling user to enter three numbers respectively
 #and filtering out non-positive numbers per entry
-  side1 = int(input("Enter a length number: "))
+  side1 = float(input("Enter a length number: "))
   if side1 <= 0:
     print("Please enter a positive number")
   else:
-    side2 = int(input("Enter another length number: "))
+    side2 = float(input("Enter another length number: "))
     if side2 <= 0:
       print("Please enter a positive number")
     else:
-      side3 = int(input("and the last length number: "))
+      side3 = float(input("and the last length number: "))
       if side3 <= 0:
         print("Please enter a positive number")
       else:
