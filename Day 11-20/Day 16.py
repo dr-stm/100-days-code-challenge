@@ -100,9 +100,9 @@ def check_win(card):
   win = False
   
   # conditions for win to be true
-  if card["B"][0] + card["I"][1] + card["N"][2] + card["G"][3] + card["O"][4] == 0:     #diagonal left to right
+  if card["B"][0] + card["I"][1] + card["N"][2] + card["G"][3] + card["O"][4] == 0:     #diagonal upper left to lower right
     win = True
-  elif card["O"][0] + card["G"][1] + card["N"][2] + card["I"][3] + card["B"][4] == 0:   #diagonal right to left
+  elif card["O"][0] + card["G"][1] + card["N"][2] + card["I"][3] + card["B"][4] == 0:   #diagonal upper right to lower left
     win = True
 
   for letter in card:     # vertical win
