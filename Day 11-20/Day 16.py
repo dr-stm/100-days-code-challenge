@@ -85,13 +85,11 @@ def generate_draw_list():
 # the two arguments represent the bingo card dictionary generated in the first function
 # and the randomly placed list generated in the immediate previous function
 def draw(card, draw_list):
-  draw_list = generate_draw_list()
   number_drawn = draw_list.pop()     #drawing numbers using pop so that it doesn't draw a number twice
   for letter in card:
     for i in range(5):
-      for number in card[letter]:
-        if number == number_drawn:
-          card[letter][i] = 0       #replacing each drawn number with 0
+      if card[letter][i] == number_drawn:
+        card[letter][i] = 0       #replacing each drawn number with 0
   return number_drawn
 
 
@@ -158,7 +156,7 @@ def main():
   
     #other print details to make the output interactive
     print("You drew {} balls to win a BINGO".format(balls_drawn))
-    print("These are the numbers you have drawn: {}\n".format(list_of_drawn_balls))
+    print("These are the numbers you have drawn: {}\n".format(sorted(list_of_drawn_balls)))
     print("\nAnd this is what your final card looks like:\n")
     displayCard(card) #prints the final card after the drawn numbers have been replaced with 0 to create BINGO
 
