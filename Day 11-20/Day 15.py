@@ -92,8 +92,8 @@ def displayCard(card):
 
 
   # using the for loop to print out each list per column
-  for letter in bingo_dict.keys():    #iterating through the column headers
-    for i in range(5):     #iterating through index 0-4, since the list items (values) per column header (key) created in the new dictionary are "5"
+  for i in range(5):    #iterating through the column headers
+    for letter in bingo_dict.keys():     #iterating through index 0-4, since the list items (values) per column header (key) created in the new dictionary are "5"
       print("%3d" %card[letter][i], end=" ")  #printing each iteration value with a 3whitespace prior to each number
     print("")   #printing a whitespace after each iteration round
 
