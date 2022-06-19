@@ -8,6 +8,8 @@ Original file is located at
 
 # **CHALLENGE DAY 19**
 
+
+
 # Task 1
 
 Write a program that reads a positive integer, n, from the user and then displays the sum of all of the integers from 1 to n.
@@ -60,6 +62,9 @@ try:
 except ValueError:
   print("Please enter a valid natural number from 1 and above")
 
+
+
+
 """# Task 2
 
 Write a program that reads an integer from the user.
@@ -82,6 +87,10 @@ try:
 except ValueError:
   print("Please enter a valid number")
 
+
+
+
+
 """# Task 3
 
 A univariate quadratic function has the form f (x) = ax^2 + bx + c, where a, b and c are constants, and a is non-zero.
@@ -92,9 +101,7 @@ A quadratic function may have 0, 1 or 2 real roots.
 These roots can be computed using the quadratic formula, shown below:
 
 
-
 > root = [−b ± √(b^2 − 4ac)] / 2a
-
 
 
 The portion of the expression under the square root sign is called the discriminant.
