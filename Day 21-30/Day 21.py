@@ -10,6 +10,7 @@ Original file is located at
 """
 
 """
+TASK 1
 In this exercise, you will create a program that reads words from the user until
 the user enters a blank line.
 After the user enters a blank line your program should display each word 
@@ -43,7 +44,10 @@ while user != "":
 print("\n")
 list(dict.fromkeys(user_list))    #using dictionary to eliminate duplicates from lists
 
+
+
 """
+TASK 2
 A proper divisor of a positive integer, n, is a positive integer less than n which divides
 evenly into n. Write a function that computes all of the proper divisors of a positive
 integer. The integer will be passed to the function as its only parameter. The function
