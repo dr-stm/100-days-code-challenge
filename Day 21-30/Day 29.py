@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1x6XYo-VTQ8Zz_sos6lp7xXDz3glhqAFm
 """
 
+
+
 """
 TASK 1
 
@@ -80,6 +82,9 @@ def main():
 #activating main function
 main()
 
+
+
+
 """
 TASK 2
 
@@ -110,6 +115,9 @@ while len(lottery_numbers) != 6:
 
 #printing output
 print(f"The randomly selected numbers are {sorted(lottery_numbers)}")
+
+
+
 
 """
 TASK 3
@@ -153,6 +161,9 @@ try:
 except ValueError as err:
   print(f"\nPlease enter a valid number, we {err}")
 
+
+
+
 """
 TASK 4
 
@@ -179,6 +190,9 @@ try:
 except:
   print("Please enter a valid integer")
 
+
+
+
 """
 TASK 5
 
@@ -193,6 +207,9 @@ from time import asctime
 
 #printing the current time
 asctime()
+
+
+
 
 """
 TASK 6
@@ -220,3 +237,36 @@ try:
 #error message
 except:
   print("Please enter valid numbers only")
+
+
+
+"""
+TASK 7
+
+In this exercise you will reverse the process described in the previous exercise.
+Develop a program that begins by reading a number of seconds from the user.
+Then your program should display the equivalent amount of time in the form
+D:HH:MM:SS, where D, HH, MM, and SS represent days, hours, minutes and seconds respectively.
+The hours, minutes and seconds should all be formatted so that
+they occupy exactly two digits, with a leading 0 displayed if necessary.
+"""
+
+
+#using try/except to prevent program from crashing
+try:
+
+  #asking user to enter the duration in seconds
+  duration = int(input("Enter the duration in seconds: "))
+
+  #using formulas to derive the equivalent time formats in the given seconds
+  rev_seconds = duration % 60
+  rev_minutes = (duration // 60) % 60
+  rev_hours = ((duration // 60) // 60) % 24
+  rev_days = duration // (24 * 60 * 60)
+
+  #printing output
+  print(f"\nThe equivalent amount of time is {rev_days:d}:{rev_hours:02d}:{rev_minutes:02d}:{rev_seconds:02d}")
+
+#error message
+except:
+  print("enter a valid number")
