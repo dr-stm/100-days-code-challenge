@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1WqREjHH9YwrnobuNEzuj2DxG8mxF_Zdw
 """
 
+
+
 """
 TASK 1
 
@@ -89,6 +91,8 @@ try:
 except ValueError:
   print("Enter a numerical input")
 
+
+
 """
 TASK 2
 
@@ -152,6 +156,8 @@ try:
 #error message for non-numeric input
 except ValueError:
   print("Enter a valid numeric input")
+
+
 
 """
 TASK 3
@@ -231,6 +237,8 @@ else:
   #print output
   print(f"\nThe grade point for {user_letter_grade} is {grade_points}")
 
+    
+    
 """
 TASK 4
 
@@ -292,6 +300,8 @@ try:
 except ValueError:
   print("Enter a numerical input")
 
+
+
 """
 TASK 5
 
@@ -347,6 +357,8 @@ try:
 except ValueError:
   print("Enter a valid numeric input")
 
+
+
 """
 TASK 6
 
@@ -400,6 +412,8 @@ try:
 #error message for non-numeric inputs
 except:
   print("Enter a valid numeric input")
+
+
 
 """
 TASK 7
@@ -481,6 +495,8 @@ try:
 except ValueError:
   print("Enter a valid numeric input")
 
+
+
 """
 TASK 8
 
@@ -538,6 +554,8 @@ try:
 except ValueError:
   print("Enter a valid year in numbers")
 
+
+
 """
 TASK 9
 
@@ -580,6 +598,8 @@ try:
 #error message for invalid date entries
 except ValueError:
   print("Please enter a valid date!")
+
+
 
 """
 TASK 10
@@ -627,6 +647,8 @@ elif len(license) == 7:
 #non-valid license plate
 else:
   print("This is not a valid license plate number!")
+
+
 
 """
 TASK 11
