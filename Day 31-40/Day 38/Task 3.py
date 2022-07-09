@@ -59,7 +59,7 @@ def main():
   for x, y in simulate_dict.items():
     
     #y/10 = (y/1000 * 10) - for getting the frequency of each total as a percent
-    print("%2d %12.2f" % (x, (y/10)), end="")
+    print(f"{x:2d} {(y/10):12.2f}", end="")
     print()
 
 #activating main function
