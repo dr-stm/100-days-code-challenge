@@ -21,8 +21,6 @@ def main():
 
   #initiating the number of attempts
   attempts = 1
-
-  check(pword)
   
   #condition for a recheck
   while check(pword) == False:
