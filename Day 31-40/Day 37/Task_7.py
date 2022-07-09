@@ -16,21 +16,23 @@ from Task_6 import check
 def main():
 
   #activating the functions
-  password()
-  check(password())
+  pword = password()
+  check(pword)
 
   #initiating the number of attempts
   attempts = 1
+
+  check(pword)
   
   #condition for a recheck
-  while check(password()) == False:
+  while check(pword) == False:
     attempts += 1
-    password()
-    check(password())
+    pword = password()
+    check(pword)
 
   #printing output
-  print(f"The good password is {password()}")
-  print(f"The length of the password is {len(password())}")
+  print(f"The good password is {pword}")
+  print(f"The length of the password is {len(pword)}")
   print(f"It took {attempts} attempt(s) to generate it.")
 
 main()
